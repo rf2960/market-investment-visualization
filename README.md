@@ -104,18 +104,3 @@ The report highlights several broad patterns:
 - funding depth and market context appear closely tied to startup outcomes
 
 These are descriptive observations from the available dataset, not causal claims.
-
-## Future Improvements
-
-- add a short methodology section on data limitations and bias near the top of the README
-- add one or two highlighted figures directly into the README
-- standardize chunk names in the Quarto source for cleaner generated figure file names
-- add a small `renv` or package-install note for easier reproducibility
-
-## Suggested Screenshots
-
-If you want the repo to look stronger on a resume, add screenshots of:
-
-- the homepage of the published report
-- the market-share visualization
-- one outcome-by-funding or cohort-based visualization
