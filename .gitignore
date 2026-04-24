@@ -4,3 +4,6 @@
 .Ruserdata
 
 /.quarto/
+.DS_Store
+Thumbs.db
+*.log

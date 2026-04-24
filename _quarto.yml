@@ -8,16 +8,16 @@ execute:
   message: false
 
 book:
-  title: "Investments"
+  title: "Startup Investment Patterns and Outcomes"
   author:
-    - Ruochen Feng (rf2960)
-    - Andrew Chen (yc4745)
-  repo-url: https://github.com/rf2960/Investments.git
+    - Ruochen Feng
+    - Andrew Chen
+  repo-url: https://github.com/rf2960/Investments
   date: today
   page-footer:
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
-  repo-actions: [edit, issue]
+  repo-actions: [source]
   chapters:
     - index.qmd
     - data.qmd
