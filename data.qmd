@@ -1,104 +1,30 @@
 # Data
 
-## Description
-The dataset used in this project is the Startup Investments dataset documented by Crunchbase, publicly available on Github (https://raw.githubusercontent.com/notpeter/crunchbase-data/master/investments.csv), containing venture-backed startup information originally compiled from the Crunchbase platform and redistributed through an open data repository. The dataset represents a snapshot rather than a continuously updated feed and includes firm-level records collected by Crunchbase through self-reporting by companies, investor disclosures, and public announcements. The CSV file contains approximately 50,000 startups and 40 variables, including founding year, market category, geographic location, funding totals, number of funding rounds, and final company status (e.g., operating, acquired, closed). Each row corresponds to a single startup, with funding information aggregated across its lifetime rather than reported at a transactional level. Because the data are a static snapshot, they do not reflect real-time updates, and younger companies are more likely to appear as “operating,” introducing survivorship and censoring effects. Additional data quality issues include missing values in founding dates and funding fields, inconsistent market labels, and the absence of small or unreported startups that never appear in venture databases.
+The dataset is a Crunchbase-style startup investment table with approximately 50,000 company records. Each row describes one company and includes market category, geography, founding date, funding rounds, total disclosed funding, and status.
 
-## Missing value analysis
+## Data Source
 
-```{r}
-library(tidyverse)
-library(janitor)
-library(naniar)  # for missingness plots
+The CSV used in this repository is `investments_VC.csv`. It is based on public redistributed Crunchbase startup investment data commonly used for exploratory analysis and Kaggle-style portfolio projects.
 
-startup_raw <- read_csv(
-  "investments_VC.csv",
-  locale = locale(encoding = "ISO-8859-1")   # matches Crunchbase examples
-)
+## Important Variables
 
-startup <- startup_raw |>
-  clean_names() |>                        # makes names snake_case, trims spaces
-  select(-starts_with("unnamed_")) |>     # drop completely empty columns
-  distinct()  |>                          # remove exact duplicates if any
-  filter(!is.na(status))
+- `status`: current company status, mainly `operating`, `acquired`, or `closed`
+- `market`: primary startup market category
+- `funding_total_usd`: total disclosed funding in USD
+- `funding_rounds`: number of funding rounds
+- `founded_year`: company founding year
+- `country_code`, `region`, `city`: geographic fields
 
-glimpse(startup)
-```
+## Data Quality Notes
 
-```{r}
-status_palette <- c(
-  operating = "#4C72B0",
-  acquired  = "#55A868",
-  closed    = "#C44E52"
-)
-```
+The dataset should be treated as a static and incomplete snapshot. It is useful for descriptive analysis, but it is not a full population of all startups.
 
-```{r}
-gg_miss_fct(startup, fct = status) +
-  scale_fill_gradient(
-    low  = "#DCE6F2",
-    high = "#4C72B0"
-  ) +
-  labs(
-    title    = "Missing Values by Startup Status",
-    subtitle = "Count of missing entries across variables, grouped by status",
-    x = "Startup status",
-    y = "Number of missing values"
-  ) +
-  theme_minimal(base_size = 14) +
-  theme(
-    plot.title      = element_text(face = "bold", size = 15),
-    plot.subtitle   = element_text(size = 12),
-    axis.text.x     = element_text(size = 9),
-    axis.text.y     = element_text(size = 9),
-    panel.grid.minor = element_blank(),
-    legend.position = "right"
-  )
-```
-The figure above summarizes the total number of missing entries across all variables by startup status, showing a consistent missing data pattern. 
+Key limitations:
 
-Two columns (x41 and x40) in the file are entirely missing, and we assume that it's caused by issues during data pipeline construction when raw data are pulled together. Location and founding information have substantial missingness (e.g., state_code, city, founded_year, founded_month, founded_quarter). Core variables for our analysis, including status, funding_total_usd, and name, are mostly observed, with only a small fraction of missing status (~2–3% of rows).
+- Many companies are still operating, making outcomes censored.
+- Recent cohorts have had less time to exit or close.
+- Funding is aggregated by company instead of represented as a dated sequence.
+- Missing values appear in founding dates, location fields, and market labels.
+- Crunchbase-style data overrepresents visible and venture-backed companies.
 
-
-```{r}
-founded_missing_by_status <- startup |>
-  group_by(status) |>
-  summarise(
-    prop_missing_founded_year = mean(is.na(founded_year)),
-    n = n(),
-    .groups = "drop"
-  )
-
-gg_miss_status <- ggplot(
-  founded_missing_by_status,
-  aes(x = status, y = prop_missing_founded_year, fill = status)
-) +
-  geom_col(
-    width = 0.7,
-    alpha = 0.9
-  ) +
-  scale_fill_manual(values = status_palette) +
-  scale_y_continuous(
-    labels = scales::percent_format(accuracy = 1)
-  ) +
-  labs(
-    title    = "Missing Founded Year Is Similar Across Startup Outcomes",
-    subtitle = "Share of startups with missing founded_year within each status category",
-    x = NULL,
-    y = "Missing founded_year (%)"
-  ) +
-  theme_minimal(base_size = 14) +
-  theme(
-    plot.title    = element_text(face = "bold", size = 15),
-    plot.subtitle = element_text(size = 12),
-    axis.text.x   = element_text(size = 9),
-    axis.text.y   = element_text(size = 9),
-    panel.grid.minor = element_blank(),
-    legend.position = "none"  
-  )
-
-gg_miss_status
-
-```
-This figure focuses specifically on the founding year variable and shows that the proportion of startups with missing founding dates is relatively similar across outcome categories, ranging from roughly 20% to 25% for acquired, closed, and operating firms. Although startups with missing or unknown status show slightly higher missingness about 30%, the overall similarity across outcomes suggests that missing founding-year information is unlikely to bias comparisons of outcomes over time. 
-
-Together, these results indicate that while missing data are common—particularly in funding-related fields—their distribution is largely consistent across status categories, allowing downstream exploratory analyses to remain interpretable with appropriate filtering and caution.
+These limitations are central to the report rather than side notes. They shape the interpretation of every visualization.

@@ -8,11 +8,11 @@ execute:
   message: false
 
 book:
-  title: "Startup Investment Patterns and Outcomes"
+  title: "Venture Outcomes Under Censoring"
   author:
     - Ruochen Feng
     - Andrew Chen
-  repo-url: https://github.com/rf2960/Investments
+  repo-url: https://github.com/rf2960/market-investment-visualization
   date: today
   page-footer:
     right: |

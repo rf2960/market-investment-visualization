@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" role="img"><rect width="920" height="520" fill="white"/>
+<text x="24.0" y="34.0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033" text-anchor="start">Markets have different exit fingerprints</text>
+<text x="24.0" y="56.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#5d6472" text-anchor="start">Bubble size is company count; stronger markets sit higher and further left.</text>
+<rect x="90" y="88" width="720" height="330" fill="#f8fafc" stroke="#d9dee8"/>
+<line x1="90.0" y1="88" x2="90.0" y2="418" stroke="#d9dee8" stroke-width="1"/>
+<text x="90.0" y="442.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="middle">0.0%</text>
+<line x1="270.0" y1="88" x2="270.0" y2="418" stroke="#d9dee8" stroke-width="1"/>
+<text x="270.0" y="442.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="middle">4.5%</text>
+<line x1="450.0" y1="88" x2="450.0" y2="418" stroke="#d9dee8" stroke-width="1"/>
+<text x="450.0" y="442.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="middle">8.9%</text>
+<line x1="630.0" y1="88" x2="630.0" y2="418" stroke="#d9dee8" stroke-width="1"/>
+<text x="630.0" y="442.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="middle">13.4%</text>
+<line x1="810.0" y1="88" x2="810.0" y2="418" stroke="#d9dee8" stroke-width="1"/>
+<text x="810.0" y="442.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="middle">17.8%</text>
+<line x1="90" y1="418.0" x2="810" y2="418.0" stroke="#d9dee8" stroke-width="1"/>
+<text x="78.0" y="422.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="end">0.0%</text>
+<line x1="90" y1="335.5" x2="810" y2="335.5" stroke="#d9dee8" stroke-width="1"/>
+<text x="78.0" y="339.5" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="end">4.6%</text>
+<line x1="90" y1="253.0" x2="810" y2="253.0" stroke="#d9dee8" stroke-width="1"/>
+<text x="78.0" y="257.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="end">9.2%</text>
+<line x1="90" y1="170.5" x2="810" y2="170.5" stroke="#d9dee8" stroke-width="1"/>
+<text x="78.0" y="174.5" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="end">13.7%</text>
+<line x1="90" y1="88.0" x2="810" y2="88.0" stroke="#d9dee8" stroke-width="1"/>
+<text x="78.0" y="92.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="end">18.3%</text>
+<text x="450.0" y="488.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="middle">Closure rate</text>
+<text x="24.0" y="253.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">Acquisition rate</text>
+<circle cx="247.4" cy="131.0" r="16.5" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="316.3" cy="233.3" r="25.0" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="420.2" cy="189.7" r="15.6" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="388.8" cy="234.5" r="18.8" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="268.3" cy="288.8" r="14.7" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="185.1" cy="347.9" r="14.8" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="263.6" cy="316.1" r="16.2" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="179.0" cy="354.4" r="15.1" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="246.3" cy="326.1" r="23.0" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="324.8" cy="291.1" r="15.7" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="296.4" cy="315.4" r="18.2" fill="#4b9b6f" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="506.9" cy="251.9" r="16.1" fill="#c75b62" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="377.6" cy="332.8" r="16.1" fill="#c75b62" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="716.1" cy="190.3" r="17.8" fill="#c75b62" fill-opacity="0.70" stroke="white" stroke-width="2"/>
+<circle cx="539.7" cy="279.9" r="14.8" fill="#c75b62" fill-opacity="0.70" stroke="white" stroke-width="2"/></svg>

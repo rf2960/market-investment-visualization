@@ -1,2 +1,14 @@
 # Conclusion
-This exploration of Crunchbase startup data highlights how the modern startup landscape has become increasingly dynamic, competitive, and shaped by rapid cycles of funding and exit. Across markets, most startups remain operating, yet firms that secure more funding rounds tend to graduate into high-value outcomes such as acquisition. We also observe that newer startup cohorts show higher rates of acquisition and closure, reflecting the volatility of recent tech booms, where capital flows faster, competition is sharper, and the window from founding to exit has shortened dramatically. Market-level patterns show strong clustering in software and biotech, but each market carries a distinct “outcome fingerprint,” illustrating how industry context shapes company trajectories. Still, this analysis is constrained by missing values (especially in founding years), unobserved factors like company size or business model, and the descriptive nature of exploratory work. Future directions could integrate geographic context, investor networks, survival curves, or time-series modeling to uncover causal dynamics behind funding pathways. Overall, the project deepened understanding of startup ecosystems and highlighted both the promise and pitfalls of interpreting entrepreneurial data at scale.
+
+The strongest conclusion from this project is methodological: startup outcomes cannot be read without accounting for censoring, cohort age, and selection effects.
+
+The dataset shows that funding depth, founding cohort, and market category are all closely associated with observed company status. However, the analysis avoids causal language because the data lack time-stamped funding histories, company fundamentals, investor networks, and comparable observation windows.
+
+As a portfolio project, the value is in the analytical framing:
+
+- identifying bias in a common public dataset
+- turning raw startup records into interpretable visuals
+- separating descriptive patterns from causal claims
+- building a reproducible static report for GitHub Pages
+
+Future work could extend this into survival analysis if transaction-level funding dates and clearer terminal-event definitions were available.

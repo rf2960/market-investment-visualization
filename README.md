@@ -1,106 +1,93 @@
-# Startup Investment Patterns and Outcomes
+# Venture Outcomes Under Censoring
 
-A Quarto-based exploratory data analysis project that studies how startup outcomes relate to founding cohorts, market segments, and funding intensity using Crunchbase venture data.
+A publication-style exploratory analysis of Crunchbase startup investment data, focused on how funding depth, founding cohort, and market category relate to startup outcomes under strong survivorship and censoring bias.
 
 ## Project Summary
 
-This project analyzes a large startup investment dataset to understand broad patterns in company status, funding, and market composition. The focus is descriptive rather than predictive: the goal is to communicate interpretable trends through clear visualizations and concise narrative analysis.
-
-## Motivation
-
-Startup ecosystems are noisy, uneven, and heavily shaped by time and capital. This project was built to answer simple but meaningful questions:
-
-- Which markets dominate the dataset?
-- How do startup outcomes vary across founding cohorts?
-- How does funding intensity relate to operating, acquired, or closed status?
-- What broad structural patterns appear in venture-backed company trajectories?
+This repository turns a public startup investment dataset into a polished analytical report. The central question is not simply "which startups succeed?" but how to interpret startup status when many companies are still operating because they have not yet had enough time to exit or fail.
 
 ## Live Report
 
-Published Quarto site:
+Published report:
 
-- [https://rf2960.github.io/Investments/](https://rf2960.github.io/Investments/)
+- https://rf2960.github.io/market-investment-visualization/
 
-## Key Features
+## Why This Project Is Stronger Now
 
-- End-to-end exploratory analysis in Quarto
-- Descriptive visualizations for a non-technical audience
-- Clear narrative interpretation alongside plots
-- Reproducible report structure with source `.qmd` files and rendered `docs/` output
-- Focus on startup outcomes, funding, and market-level heterogeneity
+- Reframes the analysis around censoring, survivorship bias, and time-to-outcome.
+- Uses a cleaner publication-style static report instead of a basic class-report landing page.
+- Adds custom SVG figures generated from the raw data.
+- Separates descriptive evidence from causal claims.
+- Includes reproducible report generation through `scripts/build_publication_report.py`.
 
-## Tech Stack
+## Key Findings
 
-- R
-- Quarto
-- tidyverse
-- ggplot2
-- janitor
-- lubridate
-- naniar
-- GGally
-- ggalluvial
+- Most companies are marked operating, so direct comparison of status rates is biased by company age.
+- In mature 2000-2008 founding cohorts, acquisition and closure rates are more interpretable than in recent cohorts.
+- Funding depth is strongly associated with outcomes, but should be read as selection and maturity rather than proof that funding causes success.
+- Top startup markets have distinct "exit fingerprints": some show higher acquisition balance, while others show more closure pressure.
 
 ## Repository Structure
 
 ```text
 .
-|-- _quarto.yml
+|-- scripts/
+|   `-- build_publication_report.py
+|-- docs/
+|   |-- index.html
+|   `-- figures/
+|       |-- cohort_outcome_mix.svg
+|       |-- formation_curve.svg
+|       |-- funding_ladder.svg
+|       |-- market_exit_fingerprint.svg
+|       `-- status_composition.svg
+|-- investments_VC.csv
 |-- index.qmd
 |-- data.qmd
 |-- results.qmd
 |-- conclusion.qmd
-|-- investments_VC.csv
-|-- docs/
-|   |-- index.html
-|   |-- data.html
-|   |-- results.html
-|   `-- conclusion.html
-`-- quarto-edav-template.Rproj
+|-- requirements.txt
+`-- README.md
 ```
 
-## Analysis Workflow
+## Reproduce The Report
 
-1. Load and clean the Crunchbase startup dataset.
-2. Examine missingness and variable quality.
-3. Explore startup formation trends over time.
-4. Compare market sizes and outcome distributions.
-5. Study how funding intensity and cohort timing relate to operating, acquisition, and closure outcomes.
-6. Summarize the main descriptive findings and limitations.
-
-## Setup
-
-Prerequisites:
-
-- R
-- Quarto
-- The R packages used in the `.qmd` files
-
-## How To Run
-
-Render the full report:
+Create a Python environment and install the lightweight dependencies:
 
 ```bash
-quarto render
+pip install -r requirements.txt
 ```
 
-If you prefer to work from RStudio, open `quarto-edav-template.Rproj` and render the project from there.
+Regenerate the static report and figures:
 
-## Example Usage
+```bash
+python scripts/build_publication_report.py
+```
 
-This repository is useful as:
+The generated report is written to `docs/index.html`, which is served by GitHub Pages.
 
-- a course project in EDA and visualization
-- a portfolio example of narrative data analysis
-- a compact example of Quarto-based reporting
+## Data
 
-## Results / What This Project Shows
+The analysis uses a Crunchbase-style startup investment dataset from Kaggle / public redistributed Crunchbase data. It includes company status, market, geography, funding rounds, total disclosed funding, and founding year.
 
-The report highlights several broad patterns:
+Important limitations:
 
-- most startups in the sample remain operating
-- software and biotech dominate the dataset by company count
-- newer startup cohorts are more likely to still be operating, partly due to censoring and survivorship effects
-- funding depth and market context appear closely tied to startup outcomes
+- The dataset is a static snapshot, not a live Crunchbase feed.
+- Startup outcomes are censored because many firms are still operating.
+- Funding is aggregated at the company level, not modeled as a time series.
+- Missingness and self-reporting bias are substantial.
+- The report is descriptive and does not make causal claims.
 
 These are descriptive observations from the available dataset, not causal claims.
+
+## Portfolio Positioning
+
+This project is best presented as an EDA and visualization case study:
+
+- analytical framing
+- data quality discussion
+- custom visual storytelling
+- careful interpretation under bias
+- reproducible static reporting
+
+It is intentionally lighter than the ML research repositories, but now reads as a polished data analysis artifact rather than a basic classroom visualization project.

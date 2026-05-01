@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="430" viewBox="0 0 920 430" role="img"><rect width="920" height="430" fill="white"/>
+<text x="24.0" y="34.0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033" text-anchor="start">Funding depth separates outcomes, but does not prove causality</text>
+<text x="24.0" y="56.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#5d6472" text-anchor="start">Median total funding rises with follow-on rounds; acquired firms sit highest in most buckets.</text>
+<line x1="90" y1="301.9" x2="850" y2="301.9" stroke="#d9dee8" stroke-width="1"/>
+<text x="24.0" y="305.9" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="start">$100K</text>
+<line x1="90" y1="229.8" x2="850" y2="229.8" stroke="#d9dee8" stroke-width="1"/>
+<text x="24.0" y="233.8" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="start">$1.0M</text>
+<line x1="90" y1="157.7" x2="850" y2="157.7" stroke="#d9dee8" stroke-width="1"/>
+<text x="24.0" y="161.7" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="start">$10.0M</text>
+<line x1="90" y1="85.6" x2="850" y2="85.6" stroke="#d9dee8" stroke-width="1"/>
+<text x="24.0" y="89.6" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="start">$100.0M</text>
+<line x1="90" y1="13.4" x2="850" y2="13.4" stroke="#d9dee8" stroke-width="1"/>
+<text x="24.0" y="17.4" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#5d6472" text-anchor="start">$1.0B</text>
+<text x="185.0" y="372.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="middle">1 rounds</text>
+<rect x="111.0" y="208.1" width="44" height="129.9" rx="5" fill="#6b8fbf"/>
+<rect x="163.0" y="208.1" width="44" height="129.9" rx="5" fill="#4b9b6f"/>
+<rect x="215.0" y="227.0" width="44" height="111.0" rx="5" fill="#c75b62"/>
+<text x="375.0" y="372.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="middle">2-3 rounds</text>
+<rect x="301.0" y="192.8" width="44" height="145.2" rx="5" fill="#6b8fbf"/>
+<rect x="353.0" y="154.9" width="44" height="183.1" rx="5" fill="#4b9b6f"/>
+<rect x="405.0" y="189.5" width="44" height="148.5" rx="5" fill="#c75b62"/>
+<text x="565.0" y="372.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="middle">4-6 rounds</text>
+<rect x="491.0" y="135.6" width="44" height="202.4" rx="5" fill="#6b8fbf"/>
+<rect x="543.0" y="121.9" width="44" height="216.1" rx="5" fill="#4b9b6f"/>
+<rect x="595.0" y="127.1" width="44" height="210.9" rx="5" fill="#c75b62"/>
+<text x="755.0" y="372.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="middle">7+ rounds</text>
+<rect x="681.0" y="102.9" width="44" height="235.1" rx="5" fill="#6b8fbf"/>
+<rect x="733.0" y="99.6" width="44" height="238.4" rx="5" fill="#4b9b6f"/>
+<rect x="785.0" y="123.7" width="44" height="214.3" rx="5" fill="#c75b62"/>
+<rect x="260" y="390" width="14" height="14" rx="3" fill="#6b8fbf"/>
+<text x="280.0" y="402.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="start">Operating</text>
+<rect x="390" y="390" width="14" height="14" rx="3" fill="#4b9b6f"/>
+<text x="410.0" y="402.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="start">Acquired</text>
+<rect x="520" y="390" width="14" height="14" rx="3" fill="#c75b62"/>
+<text x="540.0" y="402.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="start">Closed</text></svg>

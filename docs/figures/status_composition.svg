@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img"><rect width="900" height="300" fill="white"/>
+<text x="24.0" y="34.0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033" text-anchor="start">Current company status is highly censored</text>
+<text x="24.0" y="56.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#5d6472" text-anchor="start">Most companies are still operating, so exit comparisons should focus on mature cohorts.</text>
+<text x="24.0" y="99.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">Operating</text>
+<rect x="170" y="70" width="610.0" height="44" rx="6" fill="#6b8fbf"/>
+<text x="794.0" y="99.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">41,829 (86.9%)</text>
+<text x="24.0" y="163.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">Acquired</text>
+<rect x="170" y="134" width="53.8" height="44" rx="6" fill="#4b9b6f"/>
+<text x="237.8" y="163.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">3,692 (7.7%)</text>
+<text x="24.0" y="227.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">Closed</text>
+<rect x="170" y="198" width="38.0" height="44" rx="6" fill="#c75b62"/>
+<text x="222.0" y="227.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">2,603 (5.4%)</text></svg>

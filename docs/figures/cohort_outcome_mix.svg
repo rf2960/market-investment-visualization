@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="380" viewBox="0 0 920 380" role="img"><rect width="920" height="380" fill="white"/>
+<text x="24.0" y="34.0" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#172033" text-anchor="start">Outcome mix changes mainly because cohorts have different time to mature</text>
+<text x="24.0" y="56.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#5d6472" text-anchor="start">Later cohorts look healthier because many firms have not yet reached acquisition or closure.</text>
+<text x="24.0" y="104.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">pre-2000</text>
+<rect x="120.0" y="80" width="545.3" height="36" fill="#6b8fbf"/>
+<rect x="665.3" y="80" width="115.0" height="36" fill="#4b9b6f"/>
+<rect x="780.3" y="80" width="19.7" height="36" fill="#c75b62"/>
+<text x="814.0" y="104.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#5d6472" text-anchor="start">n=3,518</text>
+<text x="24.0" y="158.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">2000-04</text>
+<rect x="120.0" y="134" width="533.6" height="36" fill="#6b8fbf"/>
+<rect x="653.6" y="134" width="111.5" height="36" fill="#4b9b6f"/>
+<rect x="765.0" y="134" width="35.0" height="36" fill="#c75b62"/>
+<text x="814.0" y="158.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#5d6472" text-anchor="start">n=4,454</text>
+<text x="24.0" y="212.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">2005-08</text>
+<rect x="120.0" y="188" width="538.3" height="36" fill="#6b8fbf"/>
+<rect x="658.3" y="188" width="78.1" height="36" fill="#4b9b6f"/>
+<rect x="736.4" y="188" width="63.6" height="36" fill="#c75b62"/>
+<text x="814.0" y="212.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#5d6472" text-anchor="start">n=7,761</text>
+<text x="24.0" y="266.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">2009-11</text>
+<rect x="120.0" y="242" width="595.4" height="36" fill="#6b8fbf"/>
+<rect x="715.4" y="242" width="37.2" height="36" fill="#4b9b6f"/>
+<rect x="752.5" y="242" width="47.5" height="36" fill="#c75b62"/>
+<text x="814.0" y="266.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#5d6472" text-anchor="start">n=11,376</text>
+<text x="24.0" y="320.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#172033" text-anchor="start">2012-14</text>
+<rect x="120.0" y="296" width="661.9" height="36" fill="#6b8fbf"/>
+<rect x="781.9" y="296" width="8.7" height="36" fill="#4b9b6f"/>
+<rect x="790.6" y="296" width="9.4" height="36" fill="#c75b62"/>
+<text x="814.0" y="320.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#5d6472" text-anchor="start">n=10,455</text>
+<rect x="120" y="342" width="14" height="14" rx="3" fill="#6b8fbf"/>
+<text x="140.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="start">Operating</text>
+<rect x="240" y="342" width="14" height="14" rx="3" fill="#4b9b6f"/>
+<text x="260.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="start">Acquired</text>
+<rect x="360" y="342" width="14" height="14" rx="3" fill="#c75b62"/>
+<text x="380.0" y="354.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#172033" text-anchor="start">Closed</text></svg>
