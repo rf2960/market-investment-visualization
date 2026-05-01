@@ -1,6 +1,6 @@
 # Venture Outcomes Under Censoring
 
-A publication-style exploratory analysis of Crunchbase startup investment data, focused on how funding depth, founding cohort, and market category relate to startup outcomes under strong survivorship and censoring bias.
+An interactive Crunchbase startup investment analysis focused on how funding depth, founding cohort, and market category relate to observed outcomes under survivorship and censoring bias.
 
 ## Project Summary
 
@@ -12,11 +12,11 @@ Published report:
 
 - https://rf2960.github.io/market-investment-visualization/
 
-## Why This Project Is Stronger Now
+## What This Project Shows
 
 - Reframes the analysis around censoring, survivorship bias, and time-to-outcome.
-- Uses a cleaner publication-style static report instead of a basic class-report landing page.
-- Adds custom SVG figures generated from the raw data.
+- Uses an executive-style web report with full-screen sections, responsive charts, hover tooltips, clickable market exploration, and metric toggles.
+- Adds clean static SVG preview exports generated from the raw data.
 - Separates descriptive evidence from causal claims.
 - Includes reproducible report generation through `scripts/build_publication_report.py`.
 
@@ -36,9 +36,6 @@ Published report:
 |-- docs/
 |   |-- index.html
 |   `-- figures/
-|       |-- cohort_outcome_mix.svg
-|       |-- formation_curve.svg
-|       |-- funding_ladder.svg
 |       |-- market_exit_fingerprint.svg
 |       `-- status_composition.svg
 |-- investments_VC.csv
@@ -58,7 +55,7 @@ Create a Python environment and install the lightweight dependencies:
 pip install -r requirements.txt
 ```
 
-Regenerate the static report and figures:
+Regenerate the interactive report and static preview figures:
 
 ```bash
 python scripts/build_publication_report.py
@@ -82,12 +79,13 @@ These are descriptive observations from the available dataset, not causal claims
 
 ## Portfolio Positioning
 
-This project is best presented as an EDA and visualization case study:
+This project is best presented as an interactive data storytelling case study:
 
 - analytical framing
 - data quality discussion
-- custom visual storytelling
+- executive-facing visual storytelling
+- interactive market exploration
 - careful interpretation under bias
-- reproducible static reporting
+- reproducible HTML reporting
 
-It is intentionally lighter than the ML research repositories, but now reads as a polished data analysis artifact rather than a basic classroom visualization project.
+It is intentionally lighter than the ML research repositories, but now reads as a polished analytics artifact rather than a basic classroom visualization project.

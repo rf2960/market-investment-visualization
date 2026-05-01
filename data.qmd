@@ -4,7 +4,7 @@ The dataset is a Crunchbase-style startup investment table with approximately 50
 
 ## Data Source
 
-The CSV used in this repository is `investments_VC.csv`. It is based on public redistributed Crunchbase startup investment data commonly used for exploratory analysis and Kaggle-style portfolio projects.
+The CSV used in this repository is `investments_VC.csv`. It is based on public redistributed Crunchbase startup investment data commonly used for exploratory analysis and portfolio projects.
 
 ## Important Variables
 

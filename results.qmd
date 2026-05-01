@@ -1,6 +1,6 @@
 # Results
 
-The generated report in `docs/index.html` contains the current publication-style analysis and figures. The key findings are summarized here for readers inspecting the Quarto source.
+The generated report in `docs/index.html` contains the current interactive analysis. The key findings are summarized here for readers inspecting the Quarto source.
 
 ## Status Is Censored
 
@@ -18,17 +18,17 @@ Companies with more funding rounds generally have higher total disclosed funding
 
 High-volume markets differ in acquisition and closure balance. Some categories show relatively stronger acquisition profiles, while others show higher closure pressure. The report visualizes this with a market-level acquisition-versus-closure scatterplot.
 
-## Report Figures
+## Report Views
 
-The current generated figures are:
+The current report includes:
 
-- `docs/figures/status_composition.svg`
-- `docs/figures/formation_curve.svg`
-- `docs/figures/cohort_outcome_mix.svg`
-- `docs/figures/funding_ladder.svg`
-- `docs/figures/market_exit_fingerprint.svg`
+- a full-screen executive overview
+- an interactive cohort and formation section
+- a funding-depth section with hoverable log-scale bars
+- a market fingerprint section with clickable bubbles and a metric leaderboard
+- a data-quality section covering geographic concentration and missingness
 
-Regenerate them with:
+Regenerate the report with:
 
 ```bash
 python scripts/build_publication_report.py
