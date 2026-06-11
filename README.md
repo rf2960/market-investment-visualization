@@ -4,7 +4,7 @@ An interactive Crunchbase startup investment analysis focused on how funding dep
 
 ## Project Summary
 
-This repository turns a public startup investment dataset into a polished analytical report. The central question is not simply "which startups succeed?" but how to interpret startup status when many companies are still operating because they have not yet had enough time to exit or fail.
+This repository turns a public startup investment dataset into an interactive analytical report. The central question is not simply "which startups succeed?" but how to interpret startup status when many companies are still operating because they have not yet had enough time to exit or fail.
 
 ## Live Report
 
@@ -12,10 +12,10 @@ Published report:
 
 - https://rf2960.github.io/market-investment-visualization/
 
-## What This Project Shows
+## Project Scope
 
 - Reframes the analysis around censoring, survivorship bias, and time-to-outcome.
-- Uses an executive-style web report with full-screen sections, responsive charts, hover tooltips, clickable market exploration, and metric toggles.
+- Uses a web report with full-screen sections, responsive charts, hover tooltips, clickable market exploration, and metric toggles.
 - Adds clean static SVG preview exports generated from the raw data.
 - Separates descriptive evidence from causal claims.
 - Includes reproducible report generation through `scripts/build_publication_report.py`.
@@ -77,15 +77,6 @@ Important limitations:
 
 These are descriptive observations from the available dataset, not causal claims.
 
-## Portfolio Positioning
+## Notes
 
-This project is best presented as an interactive data storytelling case study:
-
-- analytical framing
-- data quality discussion
-- executive-facing visual storytelling
-- interactive market exploration
-- careful interpretation under bias
-- reproducible HTML reporting
-
-It is intentionally lighter than the ML research repositories, but now reads as a polished analytics artifact rather than a basic classroom visualization project.
+This is a descriptive data visualization project, not a predictive model. Its main value is the framing around censoring, the interactive report design, and the effort to keep interpretation separate from causal claims.
